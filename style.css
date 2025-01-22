@@ -1,0 +1,566 @@
+*{
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+/*-----------Navigation Part-----------*/
+
+.nav-container-1{
+    display: flex;
+    align-items: center;
+}
+
+.nav-container-2{
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    font-weight: bold;
+}
+
+.nav-container-2 a{
+    text-decoration: none;
+}
+
+.nav-list-1{
+    color: orange;
+}
+
+.nav-list-2{
+    color: skyblue;
+}
+
+.nav-list-3{
+    color: cyan;
+}
+
+.nav-list-4{
+    color: violet;
+}
+
+.nav-container-3 button{
+    border: none;
+    border-radius: 5px;
+    background-color: orange;
+    padding: 10px 50px;
+    color: white;
+    font-size: 15px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    gap: 130px;
+    width: 1100px;
+}
+
+.nav-icon{
+    display: none;
+}
+
+/*-----------Banner Part-----------*/
+
+.banner-container-1 h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.empower{
+    color: orange;
+}
+
+.vision{
+    color: skyblue;
+}
+
+.banner-container-1 p{
+    font-size: 16px;
+    color: gray;
+    text-align: justify;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.banner-container-1 button{
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    padding: 12px 40px;
+    color: white;
+    font-size: 15px;
+}
+
+.banner-container-2 img{
+    height: 480px;
+    width: 380px;
+}
+
+.banner{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    gap: 170px;
+    width: 1100px;
+}
+
+/*-----------Responsive Part-----------*/
+
+@media screen {
+    html, body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+}
+
+/*-----------Responsive Header Part-----------*/
+
+@media screen and (max-width: 576px){
+
+    .navigation{
+        width: 100%;
+    }
+
+    .nav-container-1-logo-words, .nav-container-2, .nav-container-3-btn{
+        display: none;
+    }
+
+    .nav-logo{
+        height: 65px;
+    }
+
+    .nav-icon{
+        display: block;
+        font-size: 30px;
+        color: gray;
+        
+    }
+
+    .nav-logo, .nav-icon{
+        margin-bottom: 10px;
+    }
+
+    .navigation {
+        display: flex;
+        border-bottom: 1px solid orange;
+        align-items: center;
+        gap: 370px;
+    }
+
+    .banner{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 40px;
+        margin-bottom: 90px;
+    }
+
+    .banner-container-1 h1{
+        font-size: 34px;
+    }
+
+    .banner-container-1 p{
+        text-align: center;
+        font-size: 15px;
+        color: black;
+    }
+}
+
+/*-----------Curriculum Part-----------*/
+
+.curriculum{
+    text-align: center;
+    background-image: url(B11-A2-Kids-School-main/assets/bg.png);
+}
+
+.curriculum h1{
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+
+.curriculum-card{
+    box-shadow: 5px 5px 5px 5px white;
+    height: 300px;
+    width: 280px;
+    border-radius: 10px;
+    padding: 30px 16px;
+    text-align: center;
+}
+
+.curriculum-card img{
+    margin-bottom: 40px;
+    height: 80px;
+}
+
+.curriculum-card h3{
+    margin-bottom: 30px;
+    font-size: 17px;
+}
+
+.curriculum-card p{
+    margin-bottom: 30px;
+    font-size: 13px;
+    line-height: 20px;
+    color: gray;
+}
+
+.curriculum-card-1{
+    background: linear-gradient(to bottom,rgb(214, 237, 247), white 25%);
+    border: 1px solid skyblue;
+}
+
+.curriculum-card-1 a{
+    text-decoration: none;
+    color: skyblue;
+    font-size: 14px;
+}
+
+.curriculum-card-2{
+    background: linear-gradient(rgb(250, 233, 213), white 25%);
+    border: 1px solid bisque;
+}
+
+.curriculum-card-2 a{
+    text-decoration: none;
+    color: orange;
+    font-size: 14px;
+}
+
+.curriculum-card-3{
+    background: linear-gradient(rgb(236, 236, 250), white 25%);
+    border: 1px solid lavender;
+}
+
+.curriculum-card-3 a{
+    text-decoration: none;
+    color: violet;
+    font-size: 14px;
+}
+
+.curriculum-card-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    width: 1100px;
+}
+
+.curriculum-icon i{
+    background-color: orange;
+    padding: 18px 20px;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.curriculum-icon i:hover{
+    background-color: tomato;
+    transition: 0.5s;
+}
+
+/*-----------Responsive curriculum Part-----------*/
+
+@media screen and (max-width: 576px){
+
+    .curriculum-card-container{
+        width: 100%;
+    }
+
+    .curriculum-card-container{
+        display: block;
+        text-align: center;
+    }
+
+    .curriculum-card{
+        width: 90%;
+    }
+
+    .curriculum-card img{
+        height: 90px;
+    }
+
+    .curriculum-card h3{
+        font-size: 18px;
+    }
+
+    .curriculum-card p{
+        font-size: 14px;
+    }
+
+    .curriculum-card-1, .curriculum-card-2{
+        margin-bottom: 20px;
+    }
+
+    .curriculum-card-3{
+        margin-bottom: 90px;
+    }
+
+    .curriculum-icon{
+        display: none;
+    }
+
+    .curriculum h1{
+        font-size: 33px;
+        margin-bottom: 60px;
+    }
+}
+
+/*-----------Stories Part-----------*/
+
+.stories{
+    margin-top: 50px;
+    text-align: center;
+    background: linear-gradient(rgba(255,255,255, 0.5) , rgba(255,228,196,0.5)),url(B11-A2-Kids-School-main/assets/bg.png);
+    padding-bottom: 80px;
+}
+
+.stories h1{
+    font-size: 40px;
+    margin-bottom: 80px;
+}
+
+.stories-card-1{
+    box-shadow: 0px 0px whitesmoke;
+    height: 510px;
+    width: 500px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.stories-card-1 img{
+    height: 280px;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.stories-card-1 h3{
+    margin-bottom: 35px;
+    margin-top: 15px;
+    text-align: start;
+    padding: 0px 0px 0px 25px;
+}
+
+.stories-card-1 p{
+    font-size: 14px;
+    line-height: 20px;
+    color: gray;
+    text-align: justify;
+    padding: 0px 20px 0px 25px;
+    line-height: 23px;
+}
+
+.stories-card-1 button{
+    background-color: rgb(42, 180, 180);
+    border: none;
+    border-radius: 20px;
+    padding: 9px 20px;
+    color: white;
+}
+
+.stories-btn-1{
+    position: relative;
+    top: -20px;
+    left: -145px;
+}
+
+.stories-card-2{
+    box-shadow: 0px 0px whitesmoke;
+    height: 245px;
+    width: 230px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.stories-card-2 img{
+    height: 150px;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.stories-card-2 h5{
+    margin-bottom: 20px;
+    text-align: justify;
+    padding: 0px 25px 0px 25px;
+    line-height: 20px;
+}
+
+.stories-btn-2{
+    background-color: olivedrab;
+    border: none;
+    border-radius: 20px;
+    padding: 9px 20px;
+    color: white;
+    font-size: 11px;
+}
+
+.stories-btn-3{
+    background-color: blue;
+}
+
+.stories-btn-2{
+    position: relative;
+    top: -20px;
+    left: -20px;
+}
+
+.stories-btn-5{
+    position: relative;
+    top: -20px;
+    left: -35px;
+}
+
+.stories-card-container{
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1100px;
+}
+
+.stories-card-half{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/*-----------Responsive stories Part-----------*/
+
+@media screen and (max-width: 576px){
+
+    .stories h1{
+        margin-bottom: 60px;
+        font-size: 33px;
+    }
+
+    .stories-card-1{
+        display: none;
+    }
+
+    .stories-card-container{
+        display: block;
+        width: 100%;
+    }
+
+    .stories-card-2{
+        width: 90%;
+    }
+}
+
+/*-----------Footer Part-----------*/
+
+footer{
+    background-color: rgb(94, 202, 245);
+}
+
+.foot-container-1-logo{
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.foot-logo img{
+    height: 75px;
+}
+
+.foot-container-1-logo h4{
+    font-size: 31px;
+    color: white;
+}
+
+.foot-container-1-descrip{
+    font-size: 16px;
+    color: rgb(228, 228, 228);
+    line-height: 22px;
+    text-align: justify;
+}
+
+.foot-container-2{
+    display: block;
+}
+
+.foot-container-2 p{
+    font-size: 21px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.foot-lists a{
+    text-decoration: none;
+    list-style: none;
+    font-size: 16px;
+    color: rgb(228, 228, 228);
+}
+
+.foot-list{
+    margin-bottom: 14px;
+}
+
+.foot-container-3{
+    display: block;
+}
+
+.foot-container-3 p{
+    font-size: 21px;
+    color: white;
+    margin-bottom: 35px;
+}
+
+.foot-icons-photos img{
+    height: 50px;
+}
+
+.foot-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 450px;
+    gap: 80px;
+    width: 1100px;
+}
+
+/*-----------Responsive Footer Part-----------*/
+
+@media screen and (max-width: 576px){
+    
+    .foot-container{
+        display: block;
+        height: 550px;
+        padding: 30px 15px;
+    }
+
+    .foot-container-2{
+        margin-top: 30px;
+    }
+
+    .foot-container-3{
+        margin-top: 38px;
+    }
+
+    .foot-logo img{
+        height: 70px;
+    }
+
+    .foot-container-1-logo h4{
+        font-size: 30px;
+    }
+
+    .foot-container-2 p{
+        margin-bottom: 26px;
+        margin-top: 40px;
+        font-size: 20px;
+    }
+
+    .foot-lists li{
+        font-size: 17px;
+    }
+
+    .foot-container-3 p{
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+}
