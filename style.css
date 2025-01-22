@@ -59,6 +59,13 @@ nav{
     display: none;
 }
 
+.extra{
+    font-size: 18px;
+    color: darkolivegreen;
+    text-align: center;
+    margin-top: 20px;
+}
+
 /*-----------Banner Part-----------*/
 
 .banner-container-1 h1{
@@ -100,7 +107,7 @@ nav{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 70px;
     gap: 170px;
     width: 1100px;
